@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Criminal Law - Shubh Legal Offices",
   description:
-    "Expert criminal law defense services including bail, sexual offences, fraud, and more. Professional legal representation in Delhi.",
+    "Expert criminal law defense services including bail, sexual offences, fraud, and more. Professional legal representation in S-147 Bar room -1 Civil Side Tishazari-110054 and 16 Mukharjee Nagar-110009.",
 };
 
 export default function CriminalLawPage() {
@@ -264,7 +264,7 @@ export default function CriminalLawPage() {
             emergency legal assistance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+919876543210" className="btn btn-primary flex">
+            <a href="tel:+919717555175" className="btn btn-primary flex">
               Emergency Call Now
               <svg
                 className="w-5 h-5 ml-2"

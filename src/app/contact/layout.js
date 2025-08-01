@@ -3,7 +3,7 @@ export const metadata = {
   description:
     "Contact Shubh Legal Offices for expert legal consultation. Get in touch with our experienced team led by Deepak Singh Dhaliwal today.",
   keywords:
-    "contact, legal consultation, law firm contact, attorney consultation, Delhi, Mukharjee Nagar, Tis Hazari",
+    "contact, legal consultation, law firm contact, attorney consultation, Delhi, Tishazari, Mukharjee Nagar",
 };
 
 export default function ContactLayout({ children }) {

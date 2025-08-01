@@ -309,14 +309,14 @@ export default function ContactPage() {
                       Office Address
                     </h3>
                     <p className="text-accent-blue">
-                      Mukharjee Nagar
+                      S-147 Bar room -1 Civil Side
                       <br />
-                      Delhi, India
+                      Tishazari-110054
                       <br />
                       <br />
-                      Tis Hazari
+                      16 Mukharjee Nagar
                       <br />
-                      Delhi, India
+                      Delhi-110009
                     </p>
                   </div>
                 </div>
@@ -343,10 +343,10 @@ export default function ContactPage() {
                     </h3>
                     <p className="text-accent-blue">
                       <a
-                        href="tel:+919876543210"
+                        href="tel:+919717555175"
                         className="hover:text-contact-orange transition-colors duration-200"
                       >
-                        +91 98765 43210
+                        +91 97175 55175
                       </a>
                     </p>
                   </div>
@@ -374,10 +374,10 @@ export default function ContactPage() {
                     </h3>
                     <p className="text-accent-blue">
                       <a
-                        href="mailto:info@shubhlegaloffices.com"
+                        href="mailto:Dhaliwal.er@gmail.com"
                         className="hover:text-contact-orange transition-colors duration-200"
                       >
-                        info@shubhlegaloffices.com
+                        Dhaliwal.er@gmail.com
                       </a>
                     </p>
                   </div>
@@ -432,7 +432,7 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 text-center rounded-lg shadow-sm">
               <h3 className="text-lg font-bold text-primary-brown mb-4">
-                Mukharjee Nagar
+                16 Mukharjee Nagar-110009
               </h3>
               <div className="w-full h-64 bg-gray-200 flex items-center justify-center ">
                 <p className="text-accent-blue">Interactive Map Coming Soon</p>
@@ -440,7 +440,7 @@ export default function ContactPage() {
             </div>
             <div className="bg-white p-8 text-center rounded-lg shadow-sm">
               <h3 className="text-lg font-bold text-primary-brown mb-4">
-                Tis Hazari
+                S-147 Bar room -1 Civil Side Tishazari-110054
               </h3>
               <div className="w-full h-64 bg-gray-200 flex items-center justify-center ">
                 <p className="text-accent-blue">Interactive Map Coming Soon</p>
@@ -489,8 +489,8 @@ export default function ContactPage() {
               </h3>
               <p className="text-accent-blue">
                 The timeline varies depending on the complexity of your case and
-                the legal process involved. We&apos;ll provide you with a realistic
-                timeline during your consultation.
+                the legal process involved. We&apos;ll provide you with a
+                realistic timeline during your consultation.
               </p>
             </div>
 

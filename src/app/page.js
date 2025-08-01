@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Shubh Legal Offices - Professional Legal Services Since 2017",
   description:
-    "Shubh Legal Offices provides expert legal services in civil law, family law, and criminal law. Founded in 2017 by Deepak Singh Dhaliwal, serving clients in Mukharjee Nagar and Tis Hazari, Delhi.",
+    "Shubh Legal Offices provides expert legal services in civil law, family law, and criminal law. Founded in 2017 by Deepak Singh Dhaliwal, serving clients in S-147 Bar room -1 Civil Side Tishazari-110054 and 16 Mukharjee Nagar-110009.",
 };
 
 export default function Home() {
@@ -55,7 +55,10 @@ export default function Home() {
                   </p>
                   <p className="text-lg">
                     The company is based in{" "}
-                    <strong>Mukharjee Nagar and Tis Hazari Delhi, India</strong>
+                    <strong>
+                      S-147 Bar room -1 Civil Side Tishazari-110054 and 16
+                      Mukharjee Nagar-110009
+                    </strong>
                     .
                   </p>
                 </div>
@@ -464,14 +467,15 @@ export default function Home() {
               </h3>
               <p className="text-accent-blue text-lg mb-8 leading-relaxed">
                 To provide exceptional legal counsel with integrity, dedication,
-                and a results-driven approach that puts our clients&apos; interests
-                first.
+                and a results-driven approach that puts our clients&apos;
+                interests first.
               </p>
               <div className="space-y-6">
                 <div className="flex items-center">
                   <div className="w-4 h-4 bg-luxury-gold mr-4"></div>
                   <span className="text-primary-brown font-medium text-lg">
-                    Based in Mukharjee Nagar and Tis Hazari Delhi
+                    Based in S-147 Bar room -1 Civil Side Tishazari-110054 and
+                    16 Mukharjee Nagar-110009
                   </span>
                 </div>
                 <div className="flex items-center">
@@ -513,7 +517,7 @@ export default function Home() {
             <Link href="/contact" className="btn btn-accent">
               Schedule Consultation
             </Link>
-            <a href="tel:+919876543210" className="btn btn-secondary">
+            <a href="tel:+919717555175" className="btn btn-secondary">
               Call Now
             </a>
           </div>

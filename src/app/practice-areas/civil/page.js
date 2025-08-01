@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Civil Law - Shubh Legal Offices",
   description:
-    "Expert civil law services including property disputes, money recovery, contract matters, and more. Professional legal representation in Delhi.",
+    "Expert civil law services including property disputes, money recovery, contract matters, and more. Professional legal representation in S-147 Bar room -1 Civil Side Tishazari-110054 and 16 Mukharjee Nagar-110009.",
 };
 
 export default function CivilLawPage() {

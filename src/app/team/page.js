@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Our Team - Shubh Legal Offices",
   description:
-    "Meet our experienced team led by Deepak Singh Dhaliwal, a nationally renowned lawyer serving clients in Delhi since 2017.",
+    "Meet our experienced team led by Deepak Singh Dhaliwal, a nationally renowned lawyer serving clients in S-147 Bar room -1 Civil Side Tishazari-110054 and 16 Mukharjee Nagar-110009 since 2017.",
 };
 
 export default function TeamPage() {
@@ -383,7 +383,8 @@ export default function TeamPage() {
           </h2>
           <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
             Contact us today to schedule a consultation with our experienced
-            legal team. We&apos;re here to help you navigate your legal challenges.
+            legal team. We&apos;re here to help you navigate your legal
+            challenges.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

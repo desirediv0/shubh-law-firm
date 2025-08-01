@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Practice Areas - Shubh Legal Offices",
   description:
-    "Explore our comprehensive legal services including civil law, family law, and criminal law. Expert legal representation in Delhi since 2017.",
+    "Explore our comprehensive legal services including civil law, family law, and criminal law. Expert legal representation in S-147 Bar room -1 Civil Side Tishazari-110054 and 16 Mukharjee Nagar-110009 since 2017.",
 };
 
 export default function PracticeAreasPage() {

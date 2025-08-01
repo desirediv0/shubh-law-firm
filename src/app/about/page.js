@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "About Us - Shubh Legal Offices",
   description:
-    "Learn about Shubh Legal Offices' history since 2017, our mission, and the experienced team led by Deepak Singh Dhaliwal dedicated to providing exceptional legal services in Delhi.",
+    "Learn about Shubh Legal Offices' history since 2017, our mission, and the experienced team led by Deepak Singh Dhaliwal dedicated to providing exceptional legal services in S-147 Bar room -1 Civil Side Tishazari-110054 and 16 Mukharjee Nagar-110009.",
 };
 
 export default function AboutPage() {
@@ -47,7 +47,8 @@ export default function AboutPage() {
             <p className="text-xl text-accent-blue max-w-3xl mx-auto">
               Providing legal services with proud since 2017. We are headed by
               Deepak Singh Dhaliwal, a nationally renowned lawyer serving
-              clients in Mukharjee Nagar and Tis Hazari, Delhi.
+              clients in S-147 Bar room -1 Civil Side Tishazari-110054 and 16
+              Mukharjee Nagar-110009.
             </p>
           </div>
         </div>
@@ -76,7 +77,11 @@ export default function AboutPage() {
                 <p className="text-lg leading-relaxed">
                   Law firms have been providing legal services to their clients
                   for the past 8 years. The company is based in{" "}
-                  <strong>Mukharjee Nagar and Tis Hazari Delhi, India</strong>.
+                  <strong>
+                    S-147 Bar room -1 Civil Side Tishazari-110054 and 16
+                    Mukharjee Nagar-110009
+                  </strong>
+                  .
                 </p>
               </div>
             </div>
@@ -318,8 +323,8 @@ export default function AboutPage() {
                 <p className="text-lg leading-relaxed">
                   Under his leadership, Shubh Legal Offices has been providing
                   exceptional legal services to clients for the past 8 years,
-                  serving the communities of Mukharjee Nagar and Tis Hazari,
-                  Delhi.
+                  serving the communities of S-147 Bar room -1 Civil Side
+                  Tishazari-110054 and 16 Mukharjee Nagar-110009.
                 </p>
                 <div className="flex flex-wrap gap-4 mt-8">
                   <div className="bg-contact-orange/10 text-contact-orange px-4 py-2 font-medium">

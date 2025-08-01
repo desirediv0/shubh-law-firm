@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Family Law - Shubh Legal Offices",
   description:
-    "Expert family law services including divorce, child custody, maintenance, and more. Compassionate legal representation in Delhi.",
+    "Expert family law services including divorce, child custody, maintenance, and more. Compassionate legal representation in S-147 Bar room -1 Civil Side Tishazari-110054 and 16 Mukharjee Nagar-110009.",
 };
 
 export default function FamilyLawPage() {
@@ -163,8 +163,8 @@ export default function FamilyLawPage() {
             <p className="text-xl text-accent-blue max-w-3xl mx-auto">
               Compassionate guidance through family legal matters with a focus
               on protecting your family&apos;s best interests. We understand the
-              emotional complexities involved and work to protect your family&apos;s
-              best interests.
+              emotional complexities involved and work to protect your
+              family&apos;s best interests.
             </p>
           </div>
         </div>
@@ -186,8 +186,8 @@ export default function FamilyLawPage() {
               </p>
               <p className="text-lg text-accent-blue mb-8 leading-relaxed">
                 From divorce proceedings to child custody matters, we work
-                tirelessly to protect your family&apos;s interests while ensuring the
-                best possible outcomes for all parties involved.
+                tirelessly to protect your family&apos;s interests while
+                ensuring the best possible outcomes for all parties involved.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact" className="btn btn-primary">
