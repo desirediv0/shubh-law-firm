@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Criminal Law - Shubh Legal Offices",
   description:
@@ -7,7 +9,7 @@ export const metadata = {
 export default function CriminalLawPage() {
   const services = [
     {
-      title: "Check Bouncing",
+      title: "Cheque Bouncing",
       description:
         "A cheque bounce is an offence under Section 138 of the Negotiable Instruments Act, 1881 (Act) punishable with a fine which can extend to twice the amount of the cheque or imprisonment for a term not more than two years or both.",
       details: [
@@ -15,15 +17,19 @@ export default function CriminalLawPage() {
         "A cheque bounce can occur due to several reasons, but if a cheque bounces due to insufficient funds in the drawer's account, it amounts to an offence under the Act.",
         "The bank must reject the cheque presented for payment with a return memo stating the reason as insufficient funds.",
         "In such a case, the payee of the cheque can issue a cheque bounce notice to the drawer demanding to pay the cheque amount.",
+        "Expert legal representation in cheque bounce cases with proven track record.",
       ],
     },
     {
       title: "Sexual Offence",
-      description: "Sex crimes are crimes of a sexual nature.",
+      description:
+        "Sex crimes are crimes of a sexual nature requiring expert legal defense.",
       details: [
         "Commonly known sexual crimes include rape, child abuse, sexual assault, obscene acts, possession and distribution of child pornography, possession and distribution of obscene materials, prostitution, solicitation of prostitution, pimping, and pandaling.",
         "Publicly obscene, vulgar behavior involving children, etc.",
         "Invasion of foreign matter into the genital or anal area",
+        "Expert defense representation in all types of sexual offence cases",
+        "Evidence analysis and defense strategy development",
       ],
     },
     {
@@ -34,27 +40,44 @@ export default function CriminalLawPage() {
         "In some cases, depending on the severity and nature of the accusation against you, the law may even allow you to avoid arrest in the first place. This is known as pre-bail.",
         "Once bail is granted, you can consult a lawyer, look for witnesses, collect evidence, and continue working.",
         "If bail is not granted, you will remain in custody with police.",
+        "Expert bail application preparation and representation",
+        "Emergency bail services available 24/7",
       ],
     },
     {
       title: "Fraud",
-      description: "Expert legal defense in fraud cases and financial crimes.",
+      description:
+        "Expert legal defense in fraud cases and financial crimes with comprehensive support.",
       details: [
         "Financial fraud defense",
         "Identity theft cases",
         "Insurance fraud",
         "Banking fraud",
+        "Corporate fraud defense",
       ],
     },
     {
       title: "Cyber Crime",
       description:
-        "Legal representation in cyber crime and digital offense cases.",
+        "Legal representation in cyber crime and digital offense cases with modern expertise.",
       details: [
         "Online fraud defense",
         "Digital evidence handling",
         "Cyber harassment cases",
         "Data protection violations",
+        "Internet crime defense",
+      ],
+    },
+    {
+      title: "Criminal Defamation Cases",
+      description:
+        "Expert defense in criminal defamation cases with reputation protection.",
+      details: [
+        "Defamation case defense",
+        "Evidence collection and analysis",
+        "Court representation",
+        "Settlement negotiations",
+        "Appeal proceedings",
       ],
     },
   ];
@@ -62,14 +85,14 @@ export default function CriminalLawPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-20 lg:pt-32  bg-gradient-to-br from-gray-50 to-white">
+      <section className="pt-20 lg:pt-32 bg-gradient-to-br from-neutral-light to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="text-6xl mb-6">🔒</div>
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Criminal <span className="text-orange-600">Law</span>
+            <h1 className="text-4xl lg:text-6xl font-bold text-primary-brown mb-6 font-playfair">
+              Criminal <span className="text-contact-orange">Law</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-accent-blue max-w-3xl mx-auto">
               Expert defense in criminal cases with a focus on protecting your
               rights and ensuring fair treatment under the law. We provide
               expert defense representation in all types of criminal cases.
@@ -83,24 +106,21 @@ export default function CriminalLawPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl lg:text-4xl font-bold text-primary-brown mb-6 font-playfair">
                 Expert Criminal Law Defense
               </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              <p className="text-lg text-accent-blue mb-6 leading-relaxed">
                 Our criminal law practice provides expert defense representation
                 in all types of criminal cases. We focus on protecting your
                 rights and ensuring fair treatment under the law.
               </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-lg text-accent-blue mb-8 leading-relaxed">
                 With extensive experience in criminal defense, we understand the
                 complexities of criminal law and work tirelessly to protect your
                 rights and achieve the best possible outcomes for your case.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="/contact"
-                  className="bg-orange-600 text-white px-8 py-4 font-semibold transition-all duration-300 hover:bg-orange-700 hover:shadow-lg transform hover:-translate-y-0.5 inline-flex items-center justify-center"
-                >
+                <Link href="/contact" className="btn btn-primary flex">
                   Schedule Consultation
                   <svg
                     className="w-5 h-5 ml-2"
@@ -115,19 +135,16 @@ export default function CriminalLawPage() {
                       d="M17 8l4 4m0 0l-4 4m4-4H3"
                     />
                   </svg>
-                </a>
-                <a
-                  href="/team"
-                  className="border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white px-8 py-4 font-semibold transition-all duration-300 inline-flex items-center justify-center"
-                >
+                </Link>
+                <Link href="/team" className="btn btn-secondary">
                   Meet Our Team
-                </a>
+                </Link>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-orange-500 to-red-600 p-8 lg:p-12 shadow-2xl">
+            <div className="bg-gradient-to-br from-primary-brown to-contact-orange p-8 lg:p-12 shadow-2xl">
               <div className="text-white text-center">
                 <div className="text-6xl mb-6">🔒</div>
-                <h3 className="text-2xl font-bold mb-4">
+                <h3 className="text-2xl font-bold mb-4 font-playfair">
                   Why Choose Our Criminal Law Services?
                 </h3>
                 <div className="space-y-4 text-left">
@@ -195,38 +212,35 @@ export default function CriminalLawPage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-neutral-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary-brown mb-4 font-playfair">
               Our Criminal Law Services
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-accent-blue max-w-3xl mx-auto">
               Expert defense services to protect your rights and freedom
             </p>
           </div>
           <div className="space-y-12">
             {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 p-8"
-              >
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <div key={index} className="card">
+                <h3 className="text-2xl font-bold text-primary-brown mb-6 font-playfair">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-accent-blue mb-6 leading-relaxed">
                   {service.description}
                 </p>
 
                 <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-gray-900 mb-4">
+                  <h4 className="text-lg font-semibold text-primary-brown mb-4 font-playfair">
                     Key Details:
                   </h4>
                   <ul className="space-y-2">
                     {service.details.map((detail, detailIndex) => (
                       <li key={detailIndex} className="flex items-start">
-                        <span className="w-2 h-2 bg-orange-600 mr-3 mt-2 flex-shrink-0"></span>
-                        <span className="text-gray-600">{detail}</span>
+                        <span className="w-2 h-2 bg-contact-orange mr-3 mt-2 flex-shrink-0"></span>
+                        <span className="text-accent-blue">{detail}</span>
                       </li>
                     ))}
                   </ul>
@@ -238,22 +252,19 @@ export default function CriminalLawPage() {
       </section>
 
       {/* Emergency Section */}
-      <section className="py-20 bg-red-600">
+      <section className="py-20 bg-red-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="text-6xl mb-6">🚨</div>
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 font-playfair">
             24/7 Emergency Legal Support
           </h2>
-          <p className="text-xl text-red-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             If you or a loved one has been arrested or charged with a crime,
             time is critical. Our criminal defense team is available 24/7 for
             emergency legal assistance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:+919876543210"
-              className="bg-white text-red-600 hover:bg-gray-100 px-8 py-4 font-semibold text-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 inline-flex items-center justify-center"
-            >
+            <a href="tel:+919876543210" className="btn btn-primary flex">
               Emergency Call Now
               <svg
                 className="w-5 h-5 ml-2"
@@ -269,12 +280,9 @@ export default function CriminalLawPage() {
                 />
               </svg>
             </a>
-            <a
-              href="/contact"
-              className="border-2 border-white text-white hover:bg-white hover:text-red-600 px-8 py-4 font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center"
-            >
+            <Link href="/contact" className="btn btn-secondary">
               Schedule Consultation
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -283,10 +291,10 @@ export default function CriminalLawPage() {
       <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary-brown mb-4 font-playfair">
               Our Criminal Defense Process
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-accent-blue max-w-3xl mx-auto">
               Systematic approach to criminal defense
             </p>
           </div>
@@ -318,13 +326,13 @@ export default function CriminalLawPage() {
               },
             ].map((process, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-orange-600 text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                <div className="w-16 h-16 bg-contact-orange text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                   {process.step}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg font-semibold text-primary-brown mb-3 font-playfair">
                   {process.title}
                 </h3>
-                <p className="text-gray-600">{process.description}</p>
+                <p className="text-accent-blue">{process.description}</p>
               </div>
             ))}
           </div>
@@ -332,21 +340,18 @@ export default function CriminalLawPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600">
+      <section className="py-20 bg-gradient-to-r from-primary-brown to-contact-orange">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 font-playfair">
             Need Criminal Defense?
           </h2>
-          <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Contact us immediately for expert criminal defense representation.
             Our experienced attorneys are ready to protect your rights and
             freedom.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
-              className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 font-semibold text-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 inline-flex items-center justify-center"
-            >
+            <Link href="/contact" className="btn btn-primary flex">
               Schedule Free Consultation
               <svg
                 className="w-5 h-5 ml-2"
@@ -361,13 +366,10 @@ export default function CriminalLawPage() {
                   d="M17 8l4 4m0 0l-4 4m4-4H3"
                 />
               </svg>
-            </a>
-            <a
-              href="/practice-areas"
-              className="border-2 border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4 font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center"
-            >
+            </Link>
+            <Link href="/practice-areas" className="btn btn-secondary">
               View All Practice Areas
-            </a>
+            </Link>
           </div>
         </div>
       </section>

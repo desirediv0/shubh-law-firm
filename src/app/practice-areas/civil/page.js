@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Civil Law - Shubh Legal Offices",
   description:
@@ -9,88 +11,97 @@ export default function CivilLawPage() {
     {
       title: "Partition Suit",
       description:
-        "Expert legal representation in property partition disputes to ensure fair division of assets.",
+        "Expert legal representation in property partition disputes to ensure fair division of assets among family members.",
       details: [
         "Property division among family members",
         "Legal documentation and filing",
         "Court representation and mediation",
         "Settlement negotiations",
+        "Title verification and documentation",
       ],
     },
     {
       title: "Money Recovery",
       description:
-        "Aggressive legal action to recover outstanding debts and financial obligations.",
+        "Aggressive legal action to recover outstanding debts and financial obligations with proven track record.",
       details: [
         "Debt recovery litigation",
         "Bankruptcy proceedings",
         "Asset seizure and recovery",
         "Payment plan negotiations",
+        "Commercial debt recovery",
       ],
     },
     {
       title: "Real Estate",
       description:
-        "Comprehensive legal services for all real estate transactions and disputes.",
+        "Comprehensive legal services for all real estate transactions and disputes with expert guidance.",
       details: [
         "Property purchase and sale agreements",
         "Landlord-tenant disputes",
         "Property title verification",
         "Real estate litigation",
+        "Property registration assistance",
       ],
     },
     {
       title: "Arbitration",
       description:
-        "Alternative dispute resolution through professional arbitration services.",
+        "Alternative dispute resolution through professional arbitration services for faster resolution.",
       details: [
         "Commercial arbitration",
         "Construction disputes",
         "Contract arbitration",
         "Award enforcement",
+        "Mediation services",
       ],
     },
     {
       title: "Contract Laws",
       description:
-        "Expert legal counsel for contract drafting, review, and dispute resolution.",
+        "Expert legal counsel for contract drafting, review, and dispute resolution with comprehensive support.",
       details: [
         "Contract drafting and review",
         "Breach of contract litigation",
         "Contract enforcement",
         "Legal compliance advice",
+        "Commercial agreements",
       ],
     },
     {
       title: "Wills",
-      description: "Professional will drafting and estate planning services.",
+      description:
+        "Professional will drafting and estate planning services for secure future planning.",
       details: [
         "Will drafting and execution",
         "Estate planning",
         "Probate proceedings",
         "Succession planning",
+        "Trust creation and management",
       ],
     },
     {
       title: "Eviction Suit",
       description:
-        "Legal representation in eviction proceedings for landlords and tenants.",
+        "Legal representation in eviction proceedings for landlords and tenants with fair resolution.",
       details: [
         "Eviction notice preparation",
         "Court representation",
         "Tenant rights protection",
         "Property recovery",
+        "Rent dispute resolution",
       ],
     },
     {
       title: "Civil Defamation Cases",
       description:
-        "Protection of reputation through civil defamation litigation.",
+        "Protection of reputation through civil defamation litigation with expert legal support.",
       details: [
         "Defamation claim filing",
         "Evidence collection",
         "Settlement negotiations",
         "Reputation protection",
+        "Media law compliance",
       ],
     },
   ];
@@ -98,14 +109,14 @@ export default function CivilLawPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-20 lg:pt-32  bg-gradient-to-br from-gray-50 to-white">
+      <section className="pt-20 lg:pt-32 bg-gradient-to-br from-neutral-light to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="text-6xl mb-6">⚖️</div>
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Civil <span className="text-orange-600">Law</span>
+            <h1 className="text-4xl lg:text-6xl font-bold text-primary-brown mb-6 font-playfair">
+              Civil <span className="text-contact-orange">Law</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-accent-blue max-w-3xl mx-auto">
               Comprehensive civil legal services including property disputes,
               money recovery, contract matters, and more. We provide expert
               representation in all civil legal matters.
@@ -119,25 +130,22 @@ export default function CivilLawPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl lg:text-4xl font-bold text-primary-brown mb-6 font-playfair">
                 Expert Civil Law Services
               </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              <p className="text-lg text-accent-blue mb-6 leading-relaxed">
                 Our civil law practice encompasses a wide range of legal
                 services designed to protect your rights and interests. From
                 property disputes to contract matters, we provide comprehensive
                 legal solutions.
               </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-lg text-accent-blue mb-8 leading-relaxed">
                 With years of experience in civil litigation, our team
                 understands the complexities of civil law and works diligently
                 to achieve the best possible outcomes for our clients.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="/contact"
-                  className="bg-orange-600 text-white px-8 py-4 font-semibold transition-all duration-300 hover:bg-orange-700 hover:shadow-lg transform hover:-translate-y-0.5 inline-flex items-center justify-center"
-                >
+                <Link href="/contact" className="btn btn-primary flex">
                   Schedule Consultation
                   <svg
                     className="w-5 h-5 ml-2"
@@ -152,19 +160,16 @@ export default function CivilLawPage() {
                       d="M17 8l4 4m0 0l-4 4m4-4H3"
                     />
                   </svg>
-                </a>
-                <a
-                  href="/team"
-                  className="border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white px-8 py-4 font-semibold transition-all duration-300 inline-flex items-center justify-center"
-                >
+                </Link>
+                <Link href="/team" className="btn btn-secondary">
                   Meet Our Team
-                </a>
+                </Link>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-orange-500 to-red-600 p-8 lg:p-12 shadow-2xl">
+            <div className="bg-gradient-to-br from-primary-brown to-contact-orange p-8 lg:p-12 shadow-2xl">
               <div className="text-white text-center">
                 <div className="text-6xl mb-6">⚖️</div>
-                <h3 className="text-2xl font-bold mb-4">
+                <h3 className="text-2xl font-bold mb-4 font-playfair">
                   Why Choose Our Civil Law Services?
                 </h3>
                 <div className="space-y-4 text-left">
@@ -232,33 +237,30 @@ export default function CivilLawPage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-neutral-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary-brown mb-4 font-playfair">
               Our Civil Law Services
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-accent-blue max-w-3xl mx-auto">
               Comprehensive legal services to protect your rights and interests
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 p-8"
-              >
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <div key={index} className="card">
+                <h3 className="text-xl font-bold text-primary-brown mb-4 font-playfair">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-accent-blue mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 <ul className="space-y-2">
                   {service.details.map((detail, detailIndex) => (
                     <li key={detailIndex} className="flex items-start">
                       <svg
-                        className="w-5 h-5 text-orange-600 mr-3 mt-0.5 flex-shrink-0"
+                        className="w-5 h-5 text-contact-orange mr-3 mt-0.5 flex-shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -268,7 +270,7 @@ export default function CivilLawPage() {
                           clipRule="evenodd"
                         />
                       </svg>
-                      <span className="text-gray-600">{detail}</span>
+                      <span className="text-accent-blue">{detail}</span>
                     </li>
                   ))}
                 </ul>
@@ -282,10 +284,10 @@ export default function CivilLawPage() {
       <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary-brown mb-4 font-playfair">
               Our Civil Law Process
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-accent-blue max-w-3xl mx-auto">
               Systematic approach to civil law matters
             </p>
           </div>
@@ -317,13 +319,13 @@ export default function CivilLawPage() {
               },
             ].map((process, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-orange-600 text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                <div className="w-16 h-16 bg-contact-orange text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                   {process.step}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg font-semibold text-primary-brown mb-3 font-playfair">
                   {process.title}
                 </h3>
-                <p className="text-gray-600">{process.description}</p>
+                <p className="text-accent-blue">{process.description}</p>
               </div>
             ))}
           </div>
@@ -331,21 +333,18 @@ export default function CivilLawPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600">
+      <section className="py-20 bg-gradient-to-r from-primary-brown to-contact-orange">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 font-playfair">
             Need Civil Law Assistance?
           </h2>
-          <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Contact us today for expert civil law representation. Our
             experienced attorneys are ready to help you navigate your legal
             challenges.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
-              className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 font-semibold text-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 inline-flex items-center justify-center"
-            >
+            <Link href="/contact" className="btn btn-primary  flex">
               Schedule Free Consultation
               <svg
                 className="w-5 h-5 ml-2"
@@ -360,13 +359,10 @@ export default function CivilLawPage() {
                   d="M17 8l4 4m0 0l-4 4m4-4H3"
                 />
               </svg>
-            </a>
-            <a
-              href="/practice-areas"
-              className="border-2 border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4 font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center"
-            >
+            </Link>
+            <Link href="/practice-areas" className="btn btn-secondary">
               View All Practice Areas
-            </a>
+            </Link>
           </div>
         </div>
       </section>

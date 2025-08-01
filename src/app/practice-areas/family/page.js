@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Family Law - Shubh Legal Offices",
   description:
@@ -63,27 +65,87 @@ export default function FamilyLawPage() {
         "Best interests of the child determination",
         "Visitation rights establishment",
         "Child support arrangements",
+        "Guardianship proceedings",
       ],
     },
     {
       title: "Domestic Violence",
       description:
-        "Protection and legal support for victims of domestic violence.",
+        "Protection and legal support for victims of domestic violence with compassionate representation.",
       details: [
         "Protection order applications",
         "Legal representation for victims",
         "Evidence collection and documentation",
         "Safety planning and support",
+        "Restraining order enforcement",
       ],
     },
     {
       title: "Adoption",
-      description: "Legal guidance through the adoption process.",
+      description:
+        "Legal guidance through the adoption process with comprehensive support.",
       details: [
         "Adoption law compliance",
         "Documentation and paperwork",
         "Court representation",
         "Post-adoption legal support",
+        "International adoption assistance",
+      ],
+    },
+    {
+      title: "Transfer Petition",
+      description: "Legal assistance for transfer of cases between courts.",
+      details: [
+        "Case transfer applications",
+        "Jurisdiction matters",
+        "Court representation",
+        "Documentation assistance",
+        "Legal compliance",
+      ],
+    },
+    {
+      title: "Marriage Registration",
+      description:
+        "Legal assistance for marriage registration and documentation.",
+      details: [
+        "Marriage registration process",
+        "Document preparation",
+        "Legal compliance",
+        "Certificate issuance",
+        "Post-registration support",
+      ],
+    },
+    {
+      title: "Contested Divorce",
+      description: "Legal representation in contested divorce proceedings.",
+      details: [
+        "Divorce petition filing",
+        "Evidence collection",
+        "Court representation",
+        "Settlement negotiations",
+        "Appeal proceedings",
+      ],
+    },
+    {
+      title: "Matrimonial Criminal",
+      description: "Legal defense in matrimonial criminal cases.",
+      details: [
+        "Criminal defense representation",
+        "Evidence analysis",
+        "Court proceedings",
+        "Settlement negotiations",
+        "Appeal support",
+      ],
+    },
+    {
+      title: "498A Cases",
+      description: "Legal defense and representation in 498A cases.",
+      details: [
+        "Criminal defense strategy",
+        "Evidence collection",
+        "Court representation",
+        "Settlement negotiations",
+        "Appeal proceedings",
       ],
     },
   ];
@@ -91,14 +153,14 @@ export default function FamilyLawPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-20 lg:pt-32  bg-gradient-to-br from-gray-50 to-white">
+      <section className="pt-20 lg:pt-32 bg-gradient-to-br from-neutral-light to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="text-6xl mb-6">👨‍👩‍👧‍👦</div>
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Family <span className="text-orange-600">Law</span>
+            <h1 className="text-4xl lg:text-6xl font-bold text-primary-brown mb-6 font-playfair">
+              Family <span className="text-contact-orange">Law</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-accent-blue max-w-3xl mx-auto">
               Compassionate guidance through family legal matters with a focus
               on protecting your family's best interests. We understand the
               emotional complexities involved and work to protect your family's
@@ -113,25 +175,22 @@ export default function FamilyLawPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl lg:text-4xl font-bold text-primary-brown mb-6 font-playfair">
                 Expert Family Law Services
               </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              <p className="text-lg text-accent-blue mb-6 leading-relaxed">
                 Our family law practice provides compassionate and expert
                 guidance through sensitive family legal matters. We understand
                 that family disputes can be emotionally challenging and require
                 a delicate approach.
               </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-lg text-accent-blue mb-8 leading-relaxed">
                 From divorce proceedings to child custody matters, we work
                 tirelessly to protect your family's interests while ensuring the
                 best possible outcomes for all parties involved.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="/contact"
-                  className="bg-orange-600 text-white px-8 py-4 font-semibold transition-all duration-300 hover:bg-orange-700 hover:shadow-lg transform hover:-translate-y-0.5 inline-flex items-center justify-center"
-                >
+                <Link href="/contact" className="btn btn-primary">
                   Schedule Consultation
                   <svg
                     className="w-5 h-5 ml-2"
@@ -146,19 +205,16 @@ export default function FamilyLawPage() {
                       d="M17 8l4 4m0 0l-4 4m4-4H3"
                     />
                   </svg>
-                </a>
-                <a
-                  href="/team"
-                  className="border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white px-8 py-4 font-semibold transition-all duration-300 inline-flex items-center justify-center"
-                >
+                </Link>
+                <Link href="/team" className="btn btn-secondary">
                   Meet Our Team
-                </a>
+                </Link>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-orange-500 to-red-600 p-8 lg:p-12 shadow-2xl">
+            <div className="bg-gradient-to-br from-primary-brown to-contact-orange p-8 lg:p-12 shadow-2xl">
               <div className="text-white text-center">
                 <div className="text-6xl mb-6">👨‍👩‍👧‍👦</div>
-                <h3 className="text-2xl font-bold mb-4">
+                <h3 className="text-2xl font-bold mb-4 font-playfair">
                   Why Choose Our Family Law Services?
                 </h3>
                 <div className="space-y-4 text-left">
@@ -226,39 +282,36 @@ export default function FamilyLawPage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-neutral-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary-brown mb-4 font-playfair">
               Our Family Law Services
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-accent-blue max-w-3xl mx-auto">
               Comprehensive family law services with compassion and expertise
             </p>
           </div>
           <div className="space-y-12">
             {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 p-8"
-              >
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <div key={index} className="card">
+                <h3 className="text-2xl font-bold text-primary-brown mb-6 font-playfair">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-accent-blue mb-6 leading-relaxed">
                   {service.description}
                 </p>
 
                 {service.details && (
                   <div className="mb-6">
-                    <h4 className="text-lg font-semibold text-gray-900 mb-4">
+                    <h4 className="text-lg font-semibold text-primary-brown mb-4 font-playfair">
                       Key Details:
                     </h4>
                     <ul className="space-y-2">
                       {service.details.map((detail, detailIndex) => (
                         <li key={detailIndex} className="flex items-start">
-                          <span className="w-2 h-2 bg-orange-600 mr-3 mt-2 flex-shrink-0"></span>
-                          <span className="text-gray-600">{detail}</span>
+                          <span className="w-2 h-2 bg-contact-orange mr-3 mt-2 flex-shrink-0"></span>
+                          <span className="text-accent-blue">{detail}</span>
                         </li>
                       ))}
                     </ul>
@@ -267,14 +320,14 @@ export default function FamilyLawPage() {
 
                 {service.process && (
                   <div className="mb-6">
-                    <h4 className="text-lg font-semibold text-gray-900 mb-4">
+                    <h4 className="text-lg font-semibold text-primary-brown mb-4 font-playfair">
                       Process Steps:
                     </h4>
                     <ul className="space-y-2">
                       {service.process.map((step, stepIndex) => (
                         <li key={stepIndex} className="flex items-start">
-                          <span className="w-2 h-2 bg-orange-600 mr-3 mt-2 flex-shrink-0"></span>
-                          <span className="text-gray-600">{step}</span>
+                          <span className="w-2 h-2 bg-contact-orange mr-3 mt-2 flex-shrink-0"></span>
+                          <span className="text-accent-blue">{step}</span>
                         </li>
                       ))}
                     </ul>
@@ -283,14 +336,14 @@ export default function FamilyLawPage() {
 
                 {service.documents && (
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-4">
+                    <h4 className="text-lg font-semibold text-primary-brown mb-4 font-playfair">
                       Documents Required:
                     </h4>
                     <ul className="space-y-2">
                       {service.documents.map((doc, docIndex) => (
                         <li key={docIndex} className="flex items-start">
-                          <span className="w-2 h-2 bg-orange-600 mr-3 mt-2 flex-shrink-0"></span>
-                          <span className="text-gray-600">{doc}</span>
+                          <span className="w-2 h-2 bg-contact-orange mr-3 mt-2 flex-shrink-0"></span>
+                          <span className="text-accent-blue">{doc}</span>
                         </li>
                       ))}
                     </ul>
@@ -306,10 +359,10 @@ export default function FamilyLawPage() {
       <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary-brown mb-4 font-playfair">
               Our Family Law Process
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-accent-blue max-w-3xl mx-auto">
               Compassionate approach to family law matters
             </p>
           </div>
@@ -341,13 +394,13 @@ export default function FamilyLawPage() {
               },
             ].map((process, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-orange-600 text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                <div className="w-16 h-16 bg-contact-orange text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                   {process.step}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg font-semibold text-primary-brown mb-3 font-playfair">
                   {process.title}
                 </h3>
-                <p className="text-gray-600">{process.description}</p>
+                <p className="text-accent-blue">{process.description}</p>
               </div>
             ))}
           </div>
@@ -355,21 +408,18 @@ export default function FamilyLawPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600">
+      <section className="py-20 bg-gradient-to-r from-primary-brown to-contact-orange">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 font-playfair">
             Need Family Law Assistance?
           </h2>
-          <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Contact us today for compassionate family law representation. Our
             experienced attorneys are ready to help you navigate your family
             legal challenges.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
-              className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 font-semibold text-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 inline-flex items-center justify-center"
-            >
+            <Link href="/contact" className="btn btn-accent flex">
               Schedule Free Consultation
               <svg
                 className="w-5 h-5 ml-2"
@@ -384,13 +434,10 @@ export default function FamilyLawPage() {
                   d="M17 8l4 4m0 0l-4 4m4-4H3"
                 />
               </svg>
-            </a>
-            <a
-              href="/practice-areas"
-              className="border-2 border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4 font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center"
-            >
+            </Link>
+            <Link href="/practice-areas" className="btn btn-secondary">
               View All Practice Areas
-            </a>
+            </Link>
           </div>
         </div>
       </section>
