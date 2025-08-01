@@ -49,14 +49,6 @@ export default function Header() {
               width={80}
               height={80}
             />
-            <div>
-              <h1 className="text-2xl font-bold text-primary-brown font-playfair group-hover:text-accent-gold transition-colors duration-300">
-                Shubh Legal Offices
-              </h1>
-              <p className="text-sm text-accent-blue font-source-sans uppercase tracking-wider">
-                Professional Legal Services Since 2017
-              </p>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -167,7 +159,7 @@ export default function Header() {
         {/* Mobile Navigation */}
         <div
           className={`md:hidden transition-all duration-500 overflow-hidden ${
-            isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+            isMobileMenuOpen ? "max-h-full opacity-100" : "max-h-0 opacity-0"
           }`}
         >
           <nav className="py-6 space-y-4 border-t border-gray-100">

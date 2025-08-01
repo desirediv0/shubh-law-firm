@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export const metadata = {
   title: "Practice Areas - Shubh Legal Offices",
   description:
@@ -109,19 +112,18 @@ export default function PracticeAreasPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {practiceAreas.map((area, index) => (
+            {practiceAreas.map((area) => (
               <div
                 key={area.id}
                 className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
               >
-                {/* Image Section */}
-                <div className="relative h-48 bg-gradient-to-br from-orange-500 to-red-600">
-                  <div className="absolute inset-0 bg-black/20"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-6xl">{area.icon}</div>
-                  </div>
-                </div>
-
+                <Image
+                  src={area.image}
+                  alt={area.title}
+                  width={500}
+                  height={500}
+                  className="w-full h-56 object-cover"
+                />
                 {/* Content Section */}
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -194,7 +196,7 @@ export default function PracticeAreasPage() {
                   </div>
 
                   {/* Learn More Button */}
-                  <a
+                  <Link
                     href={`/practice-areas/${area.id}`}
                     className="inline-flex items-center justify-center w-full bg-orange-600 text-white px-6 py-3 font-semibold transition-all duration-300 hover:bg-orange-700 hover:shadow-lg transform hover:-translate-y-0.5"
                   >
@@ -212,7 +214,7 @@ export default function PracticeAreasPage() {
                         d="M17 8l4 4m0 0l-4 4m4-4H3"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -329,7 +331,7 @@ export default function PracticeAreasPage() {
             best possible outcome.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="/contact"
               className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 font-semibold text-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 inline-flex items-center justify-center"
             >
@@ -347,13 +349,13 @@ export default function PracticeAreasPage() {
                   d="M17 8l4 4m0 0l-4 4m4-4H3"
                 />
               </svg>
-            </a>
-            <a
+            </Link>
+            <Link
               href="/team"
               className="border-2 border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4 font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center"
             >
               Meet Our Attorneys
-            </a>
+            </Link>
           </div>
         </div>
       </section>
