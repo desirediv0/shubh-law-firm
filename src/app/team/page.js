@@ -35,11 +35,11 @@ export default function TeamPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-20 lg:pt-32 pb-20 bg-gradient-to-br from-gray-50 to-white">
+      <section className="pt-20 lg:pt-32  bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Meet Our <span className="text-orange-600">Team</span>
+              Meet Our <span className="text-[#CA7535]">Team</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our experienced team led by Deepak Singh Dhaliwal is dedicated to
@@ -51,7 +51,7 @@ export default function TeamPage() {
       </section>
 
       {/* Attorneys Section */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -66,9 +66,9 @@ export default function TeamPage() {
             {attorneys.map((attorney, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden"
+                className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden"
               >
-                <div className="bg-gradient-to-br from-orange-500 to-red-600 h-48 flex items-center justify-center">
+                <div className="bg-[#CA7535] h-48 flex items-center justify-center">
                   <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center">
                     <span className="text-white text-3xl font-bold">
                       {attorney.name
@@ -79,10 +79,10 @@ export default function TeamPage() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#CA7535] transition-colors duration-300">
                     {attorney.name}
                   </h3>
-                  <p className="text-orange-600 font-semibold mb-2">
+                  <p className="text-[#CA7535] font-semibold mb-2">
                     {attorney.position}
                   </p>
                   <p className="text-gray-600 text-sm mb-3">
@@ -113,7 +113,7 @@ export default function TeamPage() {
                           className="flex items-center text-sm"
                         >
                           <svg
-                            className="w-4 h-4 text-orange-600 mr-2 flex-shrink-0"
+                            className="w-4 h-4 text-[#CA7535] mr-2 flex-shrink-0"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                           >
@@ -151,9 +151,9 @@ export default function TeamPage() {
             {supportStaff.map((staff, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 p-6 text-center"
+                className="bg-white  shadow-sm hover:shadow-lg transition-all duration-300 p-6 text-center"
               >
-                <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-20 h-20 bg-[#CA7535] rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white text-xl font-bold">
                     {staff.name
                       .split(" ")
@@ -164,7 +164,7 @@ export default function TeamPage() {
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   {staff.name}
                 </h3>
-                <p className="text-orange-600 font-medium mb-2">
+                <p className="text-[#CA7535] font-medium mb-2">
                   {staff.position}
                 </p>
                 <p className="text-gray-600 text-sm mb-3">
@@ -194,7 +194,7 @@ export default function TeamPage() {
       </section>
 
       {/* Team Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600">
+      <section className="py-20 bg-gradient-to-r from-[#CA7535] to-[#CA7535]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
@@ -216,7 +216,7 @@ export default function TeamPage() {
                 <div className="text-4xl lg:text-5xl font-bold text-white mb-2">
                   {stat.number}
                 </div>
-                <div className="text-orange-200">{stat.label}</div>
+                <div className="text-white">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -224,7 +224,7 @@ export default function TeamPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -360,9 +360,9 @@ export default function TeamPage() {
             ].map((value, index) => (
               <div
                 key={index}
-                className="text-center p-6 rounded-xl bg-gray-50 hover:bg-orange-50 transition-all duration-300 group"
+                className="text-center p-6  bg-gray-50 hover:bg-orange-50 transition-all duration-300 group"
               >
-                <div className="w-16 h-16 bg-orange-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-700 transition-colors duration-300">
+                <div className="w-16 h-16 bg-[#CA7535] text-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-700 transition-colors duration-300">
                   {value.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -376,7 +376,7 @@ export default function TeamPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600">
+      <section className="py-20 bg-gradient-to-r from-[#CA7535] to-[#CA7535]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
             Ready to Work with Our Team?
@@ -388,7 +388,7 @@ export default function TeamPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 inline-flex items-center justify-center"
+              className="bg-white text-[#CA7535] hover:bg-gray-100 px-8 py-4  font-semibold text-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 inline-flex items-center justify-center"
             >
               Schedule Consultation
               <svg
@@ -407,7 +407,7 @@ export default function TeamPage() {
             </a>
             <a
               href="/practice-areas"
-              className="border-2 border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#CA7535] px-8 py-4  font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center"
             >
               Our Services
             </a>

@@ -92,11 +92,11 @@ export default function PracticeAreasPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-20 lg:pt-32 pb-20 bg-gradient-to-br from-gray-50 to-white">
+      <section className="pt-20 lg:pt-32  bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Our <span className="text-orange-600">Practice Areas</span>
+              Our <span className="text-[#CA7535]">Practice Areas</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We have Focus in almost every legal fields. Comprehensive legal
@@ -109,7 +109,7 @@ export default function PracticeAreasPage() {
       </section>
 
       {/* Practice Areas Grid */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {practiceAreas.map((area) => (
@@ -145,7 +145,7 @@ export default function PracticeAreasPage() {
                         .map((service, serviceIndex) => (
                           <li key={serviceIndex} className="flex items-start">
                             <svg
-                              className="w-5 h-5 text-orange-600 mr-3 mt-0.5 flex-shrink-0"
+                              className="w-5 h-5 text-[#CA7535] mr-3 mt-0.5 flex-shrink-0"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -173,7 +173,7 @@ export default function PracticeAreasPage() {
                                   className="flex items-start"
                                 >
                                   <svg
-                                    className="w-5 h-5 text-orange-600 mr-3 mt-0.5 flex-shrink-0"
+                                    className="w-5 h-5 text-[#CA7535] mr-3 mt-0.5 flex-shrink-0"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                   >
@@ -198,7 +198,7 @@ export default function PracticeAreasPage() {
                   {/* Learn More Button */}
                   <Link
                     href={`/practice-areas/${area.id}`}
-                    className="inline-flex items-center justify-center w-full bg-orange-600 text-white px-6 py-3 font-semibold transition-all duration-300 hover:bg-orange-700 hover:shadow-lg transform hover:-translate-y-0.5"
+                    className="inline-flex items-center justify-center w-full bg-[#CA7535] text-white px-6 py-3 font-semibold transition-all duration-300 hover:bg-orange-700 hover:shadow-lg transform hover:-translate-y-0.5"
                   >
                     Learn More
                     <svg
@@ -303,10 +303,10 @@ export default function PracticeAreasPage() {
                 key={index}
                 className="text-center p-6 bg-white shadow-sm hover:shadow-lg transition-all duration-300"
               >
-                <div className="w-16 h-16 bg-orange-600 text-white flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-700 transition-colors duration-300">
+                <div className="w-16 h-16 bg-[#CA7535] text-white flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-700 transition-colors duration-300">
                   {process.icon}
                 </div>
-                <div className="text-2xl font-bold text-orange-600 mb-2">
+                <div className="text-2xl font-bold text-[#CA7535] mb-2">
                   {process.step}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -320,7 +320,7 @@ export default function PracticeAreasPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600">
+      <section className="py-20 bg-gradient-to-r from-[#CA7535] to-[#CA7535]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
             Need Legal Assistance?
@@ -333,7 +333,7 @@ export default function PracticeAreasPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 font-semibold text-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 inline-flex items-center justify-center"
+              className="bg-white text-[#CA7535] hover:bg-gray-100 px-8 py-4 font-semibold text-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 inline-flex items-center justify-center"
             >
               Schedule Free Consultation
               <svg
@@ -352,7 +352,7 @@ export default function PracticeAreasPage() {
             </Link>
             <Link
               href="/team"
-              className="border-2 border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4 font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#CA7535] px-8 py-4 font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center"
             >
               Meet Our Attorneys
             </Link>
