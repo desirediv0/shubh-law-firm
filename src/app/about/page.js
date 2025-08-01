@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "About Us - Shubh Legal Offices",
   description:
@@ -5,131 +7,48 @@ export const metadata = {
 };
 
 export default function AboutPage() {
-  const values = [
+  const processSteps = [
     {
-      icon: (
-        <svg
-          className="w-8 h-8"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-      ),
-      title: "Integrity",
+      title: "Understanding",
       description:
-        "We uphold the highest ethical standards in all our legal practices and client relationships.",
+        "We believe in devoting sufficient time, listening to our clients while understanding their issues.",
     },
     {
-      icon: (
-        <svg
-          className="w-8 h-8"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M13 10V3L4 14h7v7l9-11h-7z"
-          />
-        </svg>
-      ),
-      title: "Excellence",
+      title: "Strategic Planning",
       description:
-        "We strive for excellence in every case, delivering the best possible outcomes for our clients.",
+        "Our team further formulates a strategy to aggressively defend and contest your stance.",
     },
     {
-      icon: (
-        <svg
-          className="w-8 h-8"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-          />
-        </svg>
-      ),
-      title: "Client Focus",
+      title: "Implementing The Steps",
       description:
-        "Our clients are at the center of everything we do, with personalized attention and dedicated service.",
-    },
-    {
-      icon: (
-        <svg
-          className="w-8 h-8"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-          />
-        </svg>
-      ),
-      title: "Knowledge",
-      description:
-        "We stay current with legal developments and maintain deep expertise across all practice areas.",
+        "We believe in a wholesome execution of the plan in order to draw in fruitful results.",
     },
   ];
 
-  const achievements = [
-    { number: "8+", label: "Years of Experience" },
-    { number: "500+", label: "Cases Successfully Handled" },
-    { number: "2017", label: "Founded" },
-    { number: "100%", label: "Client Satisfaction Rate" },
-    { number: "24/7", label: "Client Support" },
-    { number: "3+", label: "Practice Areas" },
+  const whyChooseUs = [
+    "Focus on confidentiality & ethics",
+    "Aggressive legal representation in court",
+    "Competent fee & billing structure",
+    "One stop place for all legal services",
+    "Client satisfaction & regular update on case",
+    "Result oriented solution with impact",
   ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-neutral-light to-white">
+      <section className="pt-32 pb-10 bg-gradient-to-br from-neutral-light to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl lg:text-6xl font-bold text-primary-brown mb-6 font-playfair">
               About{" "}
-              <span className="text-primary-orange">Shubh Legal Offices</span>
+              <span className="text-contact-orange">Shubh Legal Offices</span>
             </h1>
             <p className="text-xl text-accent-blue max-w-3xl mx-auto">
               Providing legal services with proud since 2017. We are headed by
               Deepak Singh Dhaliwal, a nationally renowned lawyer serving
               clients in Mukharjee Nagar and Tis Hazari, Delhi.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Statistics Section */}
-      <section className="section bg-primary-brown text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
-            {achievements.map((achievement, index) => (
-              <div key={index}>
-                <div className="text-3xl md:text-4xl font-bold text-primary-orange mb-2">
-                  {achievement.number}
-                </div>
-                <div className="text-white/80 font-source-sans text-sm">
-                  {achievement.label}
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -162,7 +81,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-br from-primary-brown to-primary-orange p-8 lg:p-12 shadow-2xl">
+              <div className="bg-gradient-to-br from-primary-brown to-contact-orange p-8 lg:p-12 shadow-2xl">
                 <div className="text-white">
                   <h3 className="text-2xl font-bold mb-6 font-playfair">
                     Our Mission
@@ -205,7 +124,7 @@ export default function AboutPage() {
             <p>
               We as a Law Firm have our objectives clear where we endeavor to
               provide our clients with services which ensure perfect and
-              permanent solutions for them.
+              permanent solutions for them. Our objectives can be listed below:
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -234,7 +153,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="card text-center">
-              <div className="w-16 h-16 bg-primary-orange text-white flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-contact-orange text-white flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-8 h-8"
                   fill="none"
@@ -253,8 +172,8 @@ export default function AboutPage() {
                 To maintain effective communication
               </h3>
               <p className="text-accent-blue">
-                We ensure regular updates on case progress and maintain
-                transparent communication with our clients.
+                To maintain effective communication with client and ensure
+                regular updates.
               </p>
             </div>
             <div className="card text-center">
@@ -277,12 +196,12 @@ export default function AboutPage() {
                 To innovate ways
               </h3>
               <p className="text-accent-blue">
-                To make the process of obtaining justice simpler and more
-                accessible for all our clients.
+                To innovate ways to make the process of obtaining justice
+                simpler.
               </p>
             </div>
             <div className="card text-center">
-              <div className="w-16 h-16 bg-accent-gold text-white flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-luxury-gold text-white flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-8 h-8"
                   fill="none"
@@ -309,6 +228,29 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Process Section */}
+      <section className="section bg-neutral-light">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="section-title">
+            <h2>Our Process</h2>
+            <p>Our steps to achieve success</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {processSteps.map((step, index) => (
+              <div key={index} className="card text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary-brown to-contact-orange text-white flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
+                  {index + 1}
+                </div>
+                <h3 className="text-xl font-semibold text-primary-brown mb-4 font-playfair">
+                  {step.title}
+                </h3>
+                <p className="text-accent-blue">{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
       <section className="section bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -316,55 +258,15 @@ export default function AboutPage() {
             <h2>Why Choose Us</h2>
             <p>This is why we are the best lawyer firm for you</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="luxury-card">
-              <div className="flex items-start">
-                <span className="w-3 h-3 bg-accent-gold mr-4 mt-2 flex-shrink-0"></span>
-                <span className="text-lg text-accent-blue">
-                  Focus on confidentiality & ethics
-                </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {whyChooseUs.map((reason, index) => (
+              <div key={index} className="luxury-card">
+                <div className="flex items-start">
+                  <span className="w-3 h-3 bg-luxury-gold mr-4 mt-2 flex-shrink-0"></span>
+                  <span className="text-lg text-accent-blue">{reason}</span>
+                </div>
               </div>
-            </div>
-            <div className="luxury-card">
-              <div className="flex items-start">
-                <span className="w-3 h-3 bg-accent-gold mr-4 mt-2 flex-shrink-0"></span>
-                <span className="text-lg text-accent-blue">
-                  Aggressive legal representation in court
-                </span>
-              </div>
-            </div>
-            <div className="luxury-card">
-              <div className="flex items-start">
-                <span className="w-3 h-3 bg-accent-gold mr-4 mt-2 flex-shrink-0"></span>
-                <span className="text-lg text-accent-blue">
-                  Competent fee & billing structure
-                </span>
-              </div>
-            </div>
-            <div className="luxury-card">
-              <div className="flex items-start">
-                <span className="w-3 h-3 bg-accent-gold mr-4 mt-2 flex-shrink-0"></span>
-                <span className="text-lg text-accent-blue">
-                  One stop place for all legal services
-                </span>
-              </div>
-            </div>
-            <div className="luxury-card">
-              <div className="flex items-start">
-                <span className="w-3 h-3 bg-accent-gold mr-4 mt-2 flex-shrink-0"></span>
-                <span className="text-lg text-accent-blue">
-                  Client satisfaction & regular update on case
-                </span>
-              </div>
-            </div>
-            <div className="luxury-card">
-              <div className="flex items-start">
-                <span className="w-3 h-3 bg-accent-gold mr-4 mt-2 flex-shrink-0"></span>
-                <span className="text-lg text-accent-blue">
-                  Result oriented solution with impact
-                </span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -375,7 +277,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <div className="bg-gradient-to-br from-neutral-light to-white p-8 lg:p-12">
-                <div className="w-32 h-32 bg-gradient-to-br from-primary-brown to-primary-orange flex items-center justify-center mx-auto mb-6">
+                <div className="w-32 h-32 bg-gradient-to-br from-primary-brown to-contact-orange flex items-center justify-center mx-auto mb-6">
                   <span className="text-white text-4xl font-bold font-playfair">
                     DSD
                   </span>
@@ -384,7 +286,7 @@ export default function AboutPage() {
                   <h3 className="text-2xl font-bold text-primary-brown mb-2 font-playfair">
                     Deepak Singh Dhaliwal
                   </h3>
-                  <p className="text-primary-orange font-semibold mb-4">
+                  <p className="text-contact-orange font-semibold mb-4">
                     Nationally Renowned Lawyer
                   </p>
                   <p className="text-accent-blue">
@@ -420,13 +322,13 @@ export default function AboutPage() {
                   Delhi.
                 </p>
                 <div className="flex flex-wrap gap-4 mt-8">
-                  <div className="bg-primary-orange/10 text-primary-orange px-4 py-2 font-medium">
+                  <div className="bg-contact-orange/10 text-contact-orange px-4 py-2 font-medium">
                     Delhi Court Experience
                   </div>
-                  <div className="bg-primary-orange/10 text-primary-orange px-4 py-2 font-medium">
+                  <div className="bg-contact-orange/10 text-contact-orange px-4 py-2 font-medium">
                     8+ Years Experience
                   </div>
-                  <div className="bg-primary-orange/10 text-primary-orange px-4 py-2 font-medium">
+                  <div className="bg-contact-orange/10 text-contact-orange px-4 py-2 font-medium">
                     Nationally Renowned
                   </div>
                 </div>
@@ -437,7 +339,7 @@ export default function AboutPage() {
       </section>
 
       {/* Vision Section */}
-      <section className="section bg-gradient-to-r from-primary-brown to-primary-orange">
+      <section className="section bg-gradient-to-r from-primary-brown to-contact-orange">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 font-playfair">
             Our Vision for the Future
@@ -491,12 +393,12 @@ export default function AboutPage() {
             dedication.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact" className="btn btn-primary">
+            <Link href="/contact" className="btn btn-primary">
               Schedule Consultation
-            </a>
-            <a href="/team" className="btn btn-secondary">
+            </Link>
+            <Link href="/team" className="btn btn-secondary">
               Meet Our Team
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Shubh Legal Offices - Professional Legal Services Since 2017",
   description:
@@ -15,7 +17,9 @@ export default function Home() {
             <div className="fade-in-up">
               <h1 className="text-5xl lg:text-7xl font-bold text-primary-brown mb-8 leading-tight">
                 We are proud as
-                <span className="text-accent-gold block">law associates</span>
+                <span className="text-contact-orange block">
+                  law associates
+                </span>
               </h1>
               <p className="text-xl text-accent-blue mb-10 leading-relaxed">
                 Because our Experience will help to fight against any illegal
@@ -23,12 +27,12 @@ export default function Home() {
                 2017.
               </p>
               <div className="flex flex-col sm:flex-row gap-6">
-                <a href="/contact" className="btn btn-primary">
+                <Link href="/contact" className="btn btn-primary">
                   Read More
-                </a>
-                <a href="/practice-areas" className="btn btn-secondary">
+                </Link>
+                <Link href="/practice-areas" className="btn btn-secondary">
                   Our Services
-                </a>
+                </Link>
               </div>
             </div>
             <div className="fade-in">
@@ -67,7 +71,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
             <div className="floating-animation">
-              <div className="text-5xl md:text-6xl font-bold text-accent-gold mb-4">
+              <div className="text-5xl md:text-6xl font-bold text-luxury-gold mb-4">
                 8+
               </div>
               <div className="text-white/90 font-source-sans text-lg">
@@ -78,7 +82,7 @@ export default function Home() {
               className="floating-animation"
               style={{ animationDelay: "1s" }}
             >
-              <div className="text-5xl md:text-6xl font-bold text-accent-gold mb-4">
+              <div className="text-5xl md:text-6xl font-bold text-luxury-gold mb-4">
                 500+
               </div>
               <div className="text-white/90 font-source-sans text-lg">
@@ -89,7 +93,7 @@ export default function Home() {
               className="floating-animation"
               style={{ animationDelay: "2s" }}
             >
-              <div className="text-5xl md:text-6xl font-bold text-accent-gold mb-4">
+              <div className="text-5xl md:text-6xl font-bold text-luxury-gold mb-4">
                 2017
               </div>
               <div className="text-white/90 font-source-sans text-lg">
@@ -100,7 +104,7 @@ export default function Home() {
               className="floating-animation"
               style={{ animationDelay: "3s" }}
             >
-              <div className="text-5xl md:text-6xl font-bold text-accent-gold mb-4">
+              <div className="text-5xl md:text-6xl font-bold text-luxury-gold mb-4">
                 100%
               </div>
               <div className="text-white/90 font-source-sans text-lg">
@@ -119,7 +123,7 @@ export default function Home() {
             <p>
               We as a Law Firm have our objectives clear where we endeavor to
               provide our clients with services which ensure perfect and
-              permanent solutions for them.
+              permanent solutions for them. Our objectives can be listed below:
             </p>
           </div>
 
@@ -150,7 +154,7 @@ export default function Home() {
             </div>
 
             <div className="luxury-card text-center">
-              <div className="w-20 h-20 bg-primary-orange mx-auto mb-8 flex items-center justify-center elegant-shadow">
+              <div className="w-20 h-20 bg-contact-orange mx-auto mb-8 flex items-center justify-center elegant-shadow">
                 <svg
                   className="w-10 h-10 text-white"
                   fill="none"
@@ -169,8 +173,8 @@ export default function Home() {
                 To maintain effective communication
               </h3>
               <p className="text-accent-blue text-lg leading-relaxed">
-                We ensure regular updates on case progress and maintain
-                transparent communication with our clients.
+                To maintain effective communication with client and ensure
+                regular updates.
               </p>
             </div>
 
@@ -194,8 +198,8 @@ export default function Home() {
                 To innovate ways
               </h3>
               <p className="text-accent-blue text-lg leading-relaxed">
-                To make the process of obtaining justice simpler and more
-                accessible for all our clients.
+                To innovate ways to make the process of obtaining justice
+                simpler.
               </p>
             </div>
           </div>
@@ -207,13 +211,13 @@ export default function Home() {
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <span className="w-3 h-3 bg-accent-gold mr-4 mt-2 flex-shrink-0"></span>
+                  <span className="w-3 h-3 bg-luxury-gold mr-4 mt-2 flex-shrink-0"></span>
                   <span className="text-lg text-accent-blue">
                     To response each and every clients
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-3 h-3 bg-accent-gold mr-4 mt-2 flex-shrink-0"></span>
+                  <span className="w-3 h-3 bg-luxury-gold mr-4 mt-2 flex-shrink-0"></span>
                   <span className="text-lg text-accent-blue">
                     To implement, conduct, and review process periodically to
                     achieve better result
@@ -227,37 +231,37 @@ export default function Home() {
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <span className="w-3 h-3 bg-accent-gold mr-4 mt-2 flex-shrink-0"></span>
+                  <span className="w-3 h-3 bg-luxury-gold mr-4 mt-2 flex-shrink-0"></span>
                   <span className="text-lg text-accent-blue">
                     Focus on confidentiality & ethics
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-3 h-3 bg-accent-gold mr-4 mt-2 flex-shrink-0"></span>
+                  <span className="w-3 h-3 bg-luxury-gold mr-4 mt-2 flex-shrink-0"></span>
                   <span className="text-lg text-accent-blue">
                     Aggressive legal representation in court
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-3 h-3 bg-accent-gold mr-4 mt-2 flex-shrink-0"></span>
+                  <span className="w-3 h-3 bg-luxury-gold mr-4 mt-2 flex-shrink-0"></span>
                   <span className="text-lg text-accent-blue">
                     Competent fee & billing structure
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-3 h-3 bg-accent-gold mr-4 mt-2 flex-shrink-0"></span>
+                  <span className="w-3 h-3 bg-luxury-gold mr-4 mt-2 flex-shrink-0"></span>
                   <span className="text-lg text-accent-blue">
                     One stop place for all legal services
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-3 h-3 bg-accent-gold mr-4 mt-2 flex-shrink-0"></span>
+                  <span className="w-3 h-3 bg-luxury-gold mr-4 mt-2 flex-shrink-0"></span>
                   <span className="text-lg text-accent-blue">
                     Client satisfaction & regular update on case
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-3 h-3 bg-accent-gold mr-4 mt-2 flex-shrink-0"></span>
+                  <span className="w-3 h-3 bg-luxury-gold mr-4 mt-2 flex-shrink-0"></span>
                   <span className="text-lg text-accent-blue">
                     Result oriented solution with impact
                   </span>
@@ -278,7 +282,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="luxury-card bg-white hover:bg-primary-brown group transition-all duration-500">
-              <div className="w-16 h-16 bg-primary-orange mb-6 flex items-center justify-center elegant-shadow">
+              <div className="w-16 h-16 bg-contact-orange mb-6 flex items-center justify-center elegant-shadow">
                 <svg
                   className="w-8 h-8 text-white"
                   fill="none"
@@ -307,7 +311,7 @@ export default function Home() {
             </div>
 
             <div className="luxury-card bg-white hover:bg-primary-brown group transition-all duration-500">
-              <div className="w-16 h-16 bg-primary-orange mb-6 flex items-center justify-center elegant-shadow">
+              <div className="w-16 h-16 bg-contact-orange mb-6 flex items-center justify-center elegant-shadow">
                 <svg
                   className="w-8 h-8 text-white"
                   fill="none"
@@ -338,7 +342,7 @@ export default function Home() {
             </div>
 
             <div className="luxury-card bg-white hover:bg-primary-brown group transition-all duration-500">
-              <div className="w-16 h-16 bg-primary-orange mb-6 flex items-center justify-center elegant-shadow">
+              <div className="w-16 h-16 bg-contact-orange mb-6 flex items-center justify-center elegant-shadow">
                 <svg
                   className="w-8 h-8 text-white"
                   fill="none"
@@ -367,9 +371,9 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-16">
-            <a href="/practice-areas" className="btn btn-primary">
+            <Link href="/practice-areas" className="btn btn-primary">
               View All Practice Areas
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -397,7 +401,7 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 bg-primary-orange text-white flex items-center justify-center mx-auto mb-6 text-3xl font-bold elegant-shadow">
+              <div className="w-20 h-20 bg-contact-orange text-white flex items-center justify-center mx-auto mb-6 text-3xl font-bold elegant-shadow">
                 2
               </div>
               <h3 className="text-xl font-bold mb-4 font-playfair">
@@ -431,7 +435,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold text-primary-brown mb-8 font-playfair">
-                Founded in <span className="text-accent-gold">2017</span>
+                Founded in <span className="text-contact-orange">2017</span>
               </h2>
               <p className="text-xl text-accent-blue mb-8 leading-relaxed">
                 Shubh legal offices was founded in 2017. Is a well-known law
@@ -446,16 +450,16 @@ export default function Home() {
                 for the past 8 years.
               </p>
               <div className="flex flex-col sm:flex-row gap-6">
-                <a href="/about" className="btn btn-primary">
+                <Link href="/about" className="btn btn-primary">
                   Learn More About Us
-                </a>
-                <a href="/team" className="btn btn-secondary">
+                </Link>
+                <Link href="/team" className="btn btn-secondary">
                   Meet Our Team
-                </a>
+                </Link>
               </div>
             </div>
             <div className="luxury-card">
-              <h3 className="text-3xl font-bold mb-8 font-playfair text-accent-gold">
+              <h3 className="text-3xl font-bold mb-8 font-playfair text-luxury-gold">
                 Our Mission
               </h3>
               <p className="text-accent-blue text-lg mb-8 leading-relaxed">
@@ -465,25 +469,25 @@ export default function Home() {
               </p>
               <div className="space-y-6">
                 <div className="flex items-center">
-                  <div className="w-4 h-4 bg-accent-gold mr-4"></div>
+                  <div className="w-4 h-4 bg-luxury-gold mr-4"></div>
                   <span className="text-primary-brown font-medium text-lg">
                     Based in Mukharjee Nagar and Tis Hazari Delhi
                   </span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-4 h-4 bg-accent-gold mr-4"></div>
+                  <div className="w-4 h-4 bg-luxury-gold mr-4"></div>
                   <span className="text-primary-brown font-medium text-lg">
                     Headed by Deepak Singh Dhaliwal
                   </span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-4 h-4 bg-accent-gold mr-4"></div>
+                  <div className="w-4 h-4 bg-luxury-gold mr-4"></div>
                   <span className="text-primary-brown font-medium text-lg">
                     8+ Years of Legal Excellence
                   </span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-4 h-4 bg-accent-gold mr-4"></div>
+                  <div className="w-4 h-4 bg-luxury-gold mr-4"></div>
                   <span className="text-primary-brown font-medium text-lg">
                     Nationally Renowned Legal Services
                   </span>
@@ -506,10 +510,10 @@ export default function Home() {
             matter.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a href="/contact" className="btn btn-accent">
+            <Link href="/contact" className="btn btn-accent">
               Schedule Consultation
-            </a>
-            <a href="tel:+1234567890" className="btn btn-secondary">
+            </Link>
+            <a href="tel:+919876543210" className="btn btn-secondary">
               Call Now
             </a>
           </div>

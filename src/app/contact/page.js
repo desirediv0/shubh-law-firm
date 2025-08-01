@@ -12,16 +12,56 @@ export default function ContactPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+  const [errors, setErrors] = useState({});
+
+  const validateForm = () => {
+    const newErrors = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Please enter a valid email address";
+    }
+
+    if (!formData.subject.trim()) {
+      newErrors.subject = "Subject is required";
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
+
+    // Clear error when user starts typing
+    if (errors[name]) {
+      setErrors({
+        ...errors,
+        [name]: "",
+      });
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
+
     setIsSubmitting(true);
     setSubmitStatus(null);
 
@@ -38,6 +78,7 @@ export default function ContactPage() {
         subject: "",
         message: "",
       });
+      setErrors({});
     } catch (error) {
       setSubmitStatus("error");
     } finally {
@@ -50,7 +91,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-neutral-light to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-primary-brown mb-6 font-playfair">
+          <h1 className="text-4xl lg:text-5xl font-bold text-contact-orange mb-6 font-playfair">
             Contact Us
           </h1>
           <p className="text-xl text-accent-blue max-w-2xl mx-auto">
@@ -71,14 +112,14 @@ export default function ContactPage() {
               </h2>
 
               {submitStatus === "success" && (
-                <div className="mb-6 p-4 bg-green-50 border border-green-200 text-green-800">
+                <div className="mb-6 p-4 bg-green-50 border border-green-200 text-green-800 ">
                   Thank you for your message. We will get back to you within 24
                   hours.
                 </div>
               )}
 
               {submitStatus === "error" && (
-                <div className="mb-6 p-4 bg-red-50 border border-red-200 text-red-800">
+                <div className="mb-6 p-4 bg-red-50 border border-red-200 text-red-800 ">
                   There was an error sending your message. Please try again or
                   call us directly.
                 </div>
@@ -100,9 +141,16 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 focus:border-primary-brown focus:outline-none font-source-sans"
+                      className={`w-full px-4 py-3 border focus:outline-none font-source-sans  transition-colors ${
+                        errors.name
+                          ? "border-red-300 focus:border-red-500"
+                          : "border-gray-300 focus:border-primary-brown"
+                      }`}
                       placeholder="Your full name"
                     />
+                    {errors.name && (
+                      <p className="mt-1 text-sm text-red-600">{errors.name}</p>
+                    )}
                   </div>
 
                   <div>
@@ -119,9 +167,18 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 focus:border-primary-brown focus:outline-none font-source-sans"
+                      className={`w-full px-4 py-3 border focus:outline-none font-source-sans  transition-colors ${
+                        errors.email
+                          ? "border-red-300 focus:border-red-500"
+                          : "border-gray-300 focus:border-primary-brown"
+                      }`}
                       placeholder="your.email@example.com"
                     />
+                    {errors.email && (
+                      <p className="mt-1 text-sm text-red-600">
+                        {errors.email}
+                      </p>
+                    )}
                   </div>
                 </div>
 
@@ -139,7 +196,7 @@ export default function ContactPage() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 focus:border-primary-brown focus:outline-none font-source-sans"
+                      className="w-full px-4 py-3 border border-gray-300 focus:border-primary-brown focus:outline-none font-source-sans  transition-colors"
                       placeholder="+91 98765 43210"
                     />
                   </div>
@@ -158,9 +215,18 @@ export default function ContactPage() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 focus:border-primary-brown focus:outline-none font-source-sans"
+                      className={`w-full px-4 py-3 border focus:outline-none font-source-sans  transition-colors ${
+                        errors.subject
+                          ? "border-red-300 focus:border-red-500"
+                          : "border-gray-300 focus:border-primary-brown"
+                      }`}
                       placeholder="Brief description of your legal matter"
                     />
+                    {errors.subject && (
+                      <p className="mt-1 text-sm text-red-600">
+                        {errors.subject}
+                      </p>
+                    )}
                   </div>
                 </div>
 
@@ -178,15 +244,24 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 border border-gray-300 focus:border-primary-brown focus:outline-none font-source-sans resize-none"
+                    className={`w-full px-4 py-3 border focus:outline-none font-source-sans resize-none  transition-colors ${
+                      errors.message
+                        ? "border-red-300 focus:border-red-500"
+                        : "border-gray-300 focus:border-primary-brown"
+                    }`}
                     placeholder="Please describe your legal matter in detail..."
                   ></textarea>
+                  {errors.message && (
+                    <p className="mt-1 text-sm text-red-600">
+                      {errors.message}
+                    </p>
+                  )}
                 </div>
 
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="btn btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="btn btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed "
                 >
                   {isSubmitting ? "Sending Message..." : "Send Message"}
                 </button>
@@ -208,7 +283,7 @@ export default function ContactPage() {
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary-brown flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary-brown flex items-center justify-center flex-shrink-0 ">
                     <svg
                       className="w-6 h-6 text-white"
                       fill="none"
@@ -247,7 +322,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary-orange flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-contact-orange flex items-center justify-center flex-shrink-0 ">
                     <svg
                       className="w-6 h-6 text-white"
                       fill="none"
@@ -269,7 +344,7 @@ export default function ContactPage() {
                     <p className="text-accent-blue">
                       <a
                         href="tel:+919876543210"
-                        className="hover:text-primary-orange transition-colors duration-200"
+                        className="hover:text-contact-orange transition-colors duration-200"
                       >
                         +91 98765 43210
                       </a>
@@ -278,7 +353,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-accent-blue flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-accent-blue flex items-center justify-center flex-shrink-0 ">
                     <svg
                       className="w-6 h-6 text-white"
                       fill="none"
@@ -300,7 +375,7 @@ export default function ContactPage() {
                     <p className="text-accent-blue">
                       <a
                         href="mailto:info@shubhlegaloffices.com"
-                        className="hover:text-primary-orange transition-colors duration-200"
+                        className="hover:text-contact-orange transition-colors duration-200"
                       >
                         info@shubhlegaloffices.com
                       </a>
@@ -309,7 +384,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary-brown flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary-brown flex items-center justify-center flex-shrink-0 ">
                     <svg
                       className="w-6 h-6 text-white"
                       fill="none"
@@ -355,19 +430,19 @@ export default function ContactPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 text-center">
+            <div className="bg-white p-8 text-center rounded-lg shadow-sm">
               <h3 className="text-lg font-bold text-primary-brown mb-4">
                 Mukharjee Nagar
               </h3>
-              <div className="w-full h-64 bg-gray-200 flex items-center justify-center">
+              <div className="w-full h-64 bg-gray-200 flex items-center justify-center ">
                 <p className="text-accent-blue">Interactive Map Coming Soon</p>
               </div>
             </div>
-            <div className="bg-white p-8 text-center">
+            <div className="bg-white p-8 text-center rounded-lg shadow-sm">
               <h3 className="text-lg font-bold text-primary-brown mb-4">
                 Tis Hazari
               </h3>
-              <div className="w-full h-64 bg-gray-200 flex items-center justify-center">
+              <div className="w-full h-64 bg-gray-200 flex items-center justify-center ">
                 <p className="text-accent-blue">Interactive Map Coming Soon</p>
               </div>
             </div>
