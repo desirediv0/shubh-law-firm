@@ -1,9 +1,11 @@
 export const metadata = {
-  title: 'Contact Us - Shubh Law Firm',
-  description: 'Contact Shubh Law Firm for expert legal consultation. Get in touch with our experienced attorneys today.',
-  keywords: 'contact, legal consultation, law firm contact, attorney consultation',
-}
+  title: "Contact Us - Shubh Legal Offices",
+  description:
+    "Contact Shubh Legal Offices for expert legal consultation. Get in touch with our experienced team led by Deepak Singh Dhaliwal today.",
+  keywords:
+    "contact, legal consultation, law firm contact, attorney consultation, Delhi, Mukharjee Nagar, Tis Hazari",
+};
 
 export default function ContactLayout({ children }) {
-  return children
-} 
+  return children;
+}

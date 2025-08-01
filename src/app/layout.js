@@ -1,27 +1,34 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Shubh Law Firm - Professional Legal Services',
-  description: 'Shubh Law Firm provides expert legal services in criminal law, civil litigation, corporate law, and family law. Get professional legal consultation today.',
-  keywords: 'law firm, legal services, criminal law, civil litigation, corporate law, family law, attorney, lawyer',
-  authors: [{ name: 'Shubh Law Firm' }],
+  title: "Shubh Legal Offices - Professional Legal Services Since 2017",
+  description:
+    "Shubh Legal Offices provides expert legal services in civil law, family law, and criminal law. Founded in 2017 by Deepak Singh Dhaliwal, serving clients in Mukharjee Nagar and Tis Hazari, Delhi.",
+  keywords:
+    "law firm, legal services, civil law, family law, criminal law, attorney, lawyer, Delhi, Mukharjee Nagar, Tis Hazari, Deepak Singh Dhaliwal",
+  authors: [{ name: "Shubh Legal Offices" }],
   openGraph: {
-    title: 'Shubh Law Firm - Professional Legal Services',
-    description: 'Expert legal services with decades of experience in criminal law, civil litigation, corporate law, and family law.',
-    type: 'website',
-    locale: 'en_US',
+    title: "Shubh Legal Offices - Professional Legal Services Since 2017",
+    description:
+      "Expert legal services with 8+ years of experience in civil law, family law, and criminal law. Led by Deepak Singh Dhaliwal in Delhi.",
+    type: "website",
+    locale: "en_US",
   },
-}
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
-  )
+  );
 }
