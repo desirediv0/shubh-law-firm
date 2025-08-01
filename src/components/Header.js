@@ -49,6 +49,9 @@ export default function Header() {
               width={80}
               height={80}
             />
+            <h3 className="text-lg font-bold font-playfair">
+              Shubh Legal Offices
+            </h3>
           </Link>
 
           {/* Desktop Navigation */}
