@@ -162,8 +162,8 @@ export default function FamilyLawPage() {
             </h1>
             <p className="text-xl text-accent-blue max-w-3xl mx-auto">
               Compassionate guidance through family legal matters with a focus
-              on protecting your family's best interests. We understand the
-              emotional complexities involved and work to protect your family's
+              on protecting your family&apos;s best interests. We understand the
+              emotional complexities involved and work to protect your family&apos;s
               best interests.
             </p>
           </div>
@@ -186,7 +186,7 @@ export default function FamilyLawPage() {
               </p>
               <p className="text-lg text-accent-blue mb-8 leading-relaxed">
                 From divorce proceedings to child custody matters, we work
-                tirelessly to protect your family's interests while ensuring the
+                tirelessly to protect your family&apos;s interests while ensuring the
                 best possible outcomes for all parties involved.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">

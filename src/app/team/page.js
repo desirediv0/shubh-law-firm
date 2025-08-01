@@ -231,7 +231,7 @@ export default function TeamPage() {
               What Sets Our Team Apart
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our team's commitment to excellence and client success is
+              Our team&apos;s commitment to excellence and client success is
               reflected in everything we do.
             </p>
           </div>
@@ -383,7 +383,7 @@ export default function TeamPage() {
           </h2>
           <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
             Contact us today to schedule a consultation with our experienced
-            legal team. We're here to help you navigate your legal challenges.
+            legal team. We&apos;re here to help you navigate your legal challenges.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

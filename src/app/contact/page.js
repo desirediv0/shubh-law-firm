@@ -489,7 +489,7 @@ export default function ContactPage() {
               </h3>
               <p className="text-accent-blue">
                 The timeline varies depending on the complexity of your case and
-                the legal process involved. We'll provide you with a realistic
+                the legal process involved. We&apos;ll provide you with a realistic
                 timeline during your consultation.
               </p>
             </div>

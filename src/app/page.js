@@ -464,7 +464,7 @@ export default function Home() {
               </h3>
               <p className="text-accent-blue text-lg mb-8 leading-relaxed">
                 To provide exceptional legal counsel with integrity, dedication,
-                and a results-driven approach that puts our clients' interests
+                and a results-driven approach that puts our clients&apos; interests
                 first.
               </p>
               <div className="space-y-6">

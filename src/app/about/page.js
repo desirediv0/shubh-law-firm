@@ -89,7 +89,7 @@ export default function AboutPage() {
                   <p className="text-lg mb-6">
                     To provide exceptional legal counsel with integrity,
                     dedication, and a results-driven approach that puts our
-                    clients' interests first.
+                    clients&apos; interests first.
                   </p>
                   <div className="grid grid-cols-2 gap-6">
                     <div className="text-center">
@@ -347,8 +347,8 @@ export default function AboutPage() {
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             We envision a future where quality legal representation is
             accessible to all, where justice is served with integrity, and where
-            our firm continues to be a trusted partner in our clients' success
-            stories.
+            our firm continues to be a trusted partner in our clients&apos;
+            success stories.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="bg-white/10 backdrop-blur-sm p-6">
