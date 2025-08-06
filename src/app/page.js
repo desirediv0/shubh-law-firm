@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero";
 import Link from "next/link";
 
 export const metadata = {
@@ -9,64 +10,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
-      <section className="pt-36 pb-32 bg-luxury-subtle relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-luxury-gold/3 to-luxury-bronze/3"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="fade-in-up">
-              <h1 className="text-5xl lg:text-7xl font-bold text-primary-brown mb-8 leading-tight">
-                We are proud as
-                <span className="text-contact-orange block">
-                  law associates
-                </span>
-              </h1>
-              <p className="text-xl text-accent-blue mb-10 leading-relaxed">
-                Because our Experience will help to fight against any illegal
-                and violence activity. Providing legal services with proud since
-                2017.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-6">
-                <Link href="/contact" className="btn btn-primary">
-                  Read More
-                </Link>
-                <Link href="/practice-areas" className="btn btn-secondary">
-                  Our Services
-                </Link>
-              </div>
-            </div>
-            <div className="fade-in">
-              <div className="luxury-card bg-white p-12 text-primary-brown relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-luxury-gold/5 to-luxury-bronze/5"></div>
-                <div className="relative z-10">
-                  <h3 className="text-3xl font-bold mb-8 font-playfair">
-                    About Shubh Legal Offices
-                  </h3>
-                  <p className="text-lg mb-6">
-                    Shubh legal offices was founded in 2017. Is a well-known law
-                    firm that provides a variety of legal services to clients
-                    around the world.
-                  </p>
-                  <p className="text-lg mb-6">
-                    We are headed by <strong>Deepak Singh Dhaliwal</strong> a
-                    nationally renowned lawyer. As a well-known lawyer in the
-                    Delhi Court, he is a constant source of inspiration for us,
-                    making this law firm unparalleled.
-                  </p>
-                  <p className="text-lg">
-                    The company is based in{" "}
-                    <strong>
-                      S-147 Bar room -1 Civil Side Tishazari-110054 and 16
-                      Mukharjee Nagar-110009
-                    </strong>
-                    .
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       {/* Statistics Section */}
       <section className="section bg-primary-brown text-white relative overflow-hidden">
