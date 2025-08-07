@@ -172,8 +172,25 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
+        {/* Disclaimer */}
         <div className="border-t border-white/20 mt-12 pt-8">
+          <div className="bg-white/5 p-6 rounded-lg">
+            <h5 className="text-lg font-bold mb-3 font-playfair">Disclaimer</h5>
+            <p className="text-white/80 text-sm leading-relaxed font-source-sans">
+              The listed information in the website is exclusively available as
+              per the listed guidelines under the Bar Council of India. Please
+              take a note that Shubh Legal Offices is not liable for any of the
+              end result that is an outcome of the visitor&apos;s conscience (as
+              per their interpretations on the listed details). The content on
+              this website is general information and Readers and Subscribers
+              should seek proper advice from an expert before acting on the
+              information mentioned herein.
+            </p>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="border-t border-white/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/60 text-sm font-source-sans">
               © {currentYear} Shubh Legal Offices. All rights reserved.
