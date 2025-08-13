@@ -15,28 +15,24 @@ export default function DisclaimerModal() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Check if user has already agreed to disclaimer
-    const hasAgreed = localStorage.getItem("disclaimer-agreed");
+    // Always show the modal after short delay
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+    }, 500);
 
-    if (!hasAgreed) {
-      // Show modal after a short delay
-      const timer = setTimeout(() => {
-        setIsOpen(true);
-      }, 500);
-
-      return () => clearTimeout(timer);
-    }
+    return () => clearTimeout(timer);
   }, []);
 
   const handleAgree = () => {
-    // Mark as agreed in localStorage
-    localStorage.setItem("disclaimer-agreed", "true");
     setIsOpen(false);
   };
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+      <DialogContent
+        className="max-w-2xl max-h-[80vh] overflow-y-auto"
+        hideCloseButton
+      >
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold font-playfair text-primary-brown">
             Disclaimer
